@@ -1,0 +1,43 @@
+body{
+    padding: 30px;
+}
+
+.middle{
+    padding: 30px;
+}
+.inline__grade{
+ margin-left: 75px;
+}
+.inline__creditLoad{
+    margin-left: 150px;
+}
+.inline__gradePoint{
+    margin-left: 200px;
+}
+.outline__grade{
+    margin-left: 75px;
+}
+.outline__creditLoad{
+    margin-left: 100px;
+}
+.outline__gradePoint{
+    margin-left: 120px;
+}
+.bottom{
+    background-color: rgb(214, 208, 208);
+}
+.btn__delete{
+    border: none;
+    color: rgb(139, 11, 43);
+    font-size: 20px;
+    background-color: fff;
+    transform: rotate(45deg);
+    transition: all .2s;
+    
+}
+.btn__delete:hover{
+    transform: translateX(-0.8rem);
+    
+    
+}
+    

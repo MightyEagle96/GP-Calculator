@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="top">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control firstName" id="firstName">
+                </div>
+                 
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control lastName" id="lastName">
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary btnSave">Save</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                      Data
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title nameLabel"></h5>
+                      <p class="card-text ">First Semester: <span class="firstGpLabel"></span></p>
+                      <p class="card-text ">Second Semester: <span class="secondGpLabel"></span></p>
+                      <p class="card-text ">CGPA: <span class="cgpaLabel"></span></p>
+                      <p class="card-text ">Degree: <span class="degreeLabel"></span></p>
+                      <p ><i class="fas fa-times-circle"></i></p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+    </section>
+    <section class="middle">
+        <div class="form-group row">
+
+            <div class="col">
+                <select name="" id="" class="form-control semester">
+                    <option value="first" selected>First Semester</option>
+                    <option value="second">Second Semester</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Course code" class="form-control courseCode">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Credit Load" class ="form-control creditLoad">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Grade" class ="form-control grade">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btnOk">Ok</button>
+            </div>
+        </div>
+        
+    </section class = "bottom">
+    <div class="row">
+        <div class="col ">
+            <h3>First Semester</h3>
+            <table class="table firstContainer">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Course Code</th>
+                        <th scope="col">Grade</th>
+                        <th scope="col">Credit Load</th>
+                        <th scope="col">Grade Point</th>
+                        <th scope="col">Delete</th>
+                         
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>CSE 413</td>
+                        <td>A</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td><button class ="btn__delete">+</button></td>
+
+                    </tr>
+                </tbody> -->
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Total Credit Load: <span class="tclFirst"></span></th>
+                        <th>Cummulative points: <span class="cummulativePointsFirst"></span></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <div class="col ">
+            <h3>Second Semester</h3>
+            <table class="table secondContainer">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Course Code</th>
+                        <th scope="col">Grade</th> 
+                        <th scope="col">Credit Load</th>
+                        <th scope="col">Grade Point</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>CSE 413</td>
+                        <td>A</td>
+                        <td>3</td>
+                        <td>3</td>
+
+                    </tr>
+                </tbody> -->
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Total Credit Load: <span class="tclSecond"></span></th>
+                        <th>Cummulative points: <span class="cummulativePointsSecond"></span></th>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+
+    <section>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
